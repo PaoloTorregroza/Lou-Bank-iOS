@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3752194D297EEC5400CDF277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752194C297EEC5400CDF277 /* ViewController.swift */; };
+		37521950297EEC7B00CDF277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3752194E297EEC7B00CDF277 /* Main.storyboard */; };
 		378D2061297EC36B002FA681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2060297EC36B002FA681 /* AppDelegate.swift */; };
 		378D2063297EC36B002FA681 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2062297EC36B002FA681 /* SceneDelegate.swift */; };
-		378D2065297EC36B002FA681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2064297EC36B002FA681 /* ViewController.swift */; };
-		378D2068297EC36B002FA681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2066297EC36B002FA681 /* Main.storyboard */; };
 		378D206A297EC36C002FA681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D2069297EC36C002FA681 /* Assets.xcassets */; };
 		378D206D297EC36C002FA681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D206B297EC36C002FA681 /* LaunchScreen.storyboard */; };
 		378D2078297EC36C002FA681 /* LouBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2077297EC36C002FA681 /* LouBankTests.swift */; };
 		378D2082297EC36C002FA681 /* LouBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2081297EC36C002FA681 /* LouBankUITests.swift */; };
 		378D2084297EC36C002FA681 /* LouBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2083297EC36C002FA681 /* LouBankUITestsLaunchTests.swift */; };
+		378D2098297EC65F002FA681 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2097297EC65F002FA681 /* Auth.storyboard */; };
+		378D209C297EC67B002FA681 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D209B297EC67B002FA681 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3752194C297EEC5400CDF277 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3752194F297EEC7B00CDF277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		378D205D297EC36B002FA681 /* LouBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378D2060297EC36B002FA681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		378D2062297EC36B002FA681 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		378D2064297EC36B002FA681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		378D2067297EC36B002FA681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		378D2069297EC36C002FA681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		378D206C297EC36C002FA681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		378D206E297EC36C002FA681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		378D207D297EC36C002FA681 /* LouBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LouBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378D2081297EC36C002FA681 /* LouBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITests.swift; sourceTree = "<group>"; };
 		378D2083297EC36C002FA681 /* LouBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LouBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		378D2090297EC393002FA681 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		378D2097297EC65F002FA681 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		378D209B297EC67B002FA681 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 		378D2054297EC36B002FA681 = {
 			isa = PBXGroup;
 			children = (
+				378D2090297EC393002FA681 /* README.md */,
 				378D205F297EC36B002FA681 /* LouBank */,
 				378D2076297EC36C002FA681 /* LouBankTests */,
 				378D2080297EC36C002FA681 /* LouBankUITests */,
@@ -99,12 +105,16 @@
 		378D205F297EC36B002FA681 /* LouBank */ = {
 			isa = PBXGroup;
 			children = (
+				378D2096297EC550002FA681 /* Assets */,
+				378D2095297EC549002FA681 /* Main */,
+				378D2094297EC53E002FA681 /* ViewController */,
+				378D2093297EC535002FA681 /* ViewModel */,
+				378D2092297EC530002FA681 /* View */,
+				378D2091297EC523002FA681 /* Model */,
 				378D2060297EC36B002FA681 /* AppDelegate.swift */,
+				3752194E297EEC7B00CDF277 /* Main.storyboard */,
 				378D2062297EC36B002FA681 /* SceneDelegate.swift */,
-				378D2064297EC36B002FA681 /* ViewController.swift */,
-				378D2066297EC36B002FA681 /* Main.storyboard */,
 				378D2069297EC36C002FA681 /* Assets.xcassets */,
-				378D206B297EC36C002FA681 /* LaunchScreen.storyboard */,
 				378D206E297EC36C002FA681 /* Info.plist */,
 			);
 			path = LouBank;
@@ -125,6 +135,68 @@
 				378D2083297EC36C002FA681 /* LouBankUITestsLaunchTests.swift */,
 			);
 			path = LouBankUITests;
+			sourceTree = "<group>";
+		};
+		378D2091297EC523002FA681 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		378D2092297EC530002FA681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3752194C297EEC5400CDF277 /* ViewController.swift */,
+				378D2099297EC664002FA681 /* Auth */,
+				378D206B297EC36C002FA681 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		378D2093297EC535002FA681 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		378D2094297EC53E002FA681 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				378D209A297EC66D002FA681 /* Auth */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		378D2095297EC549002FA681 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		378D2096297EC550002FA681 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		378D2099297EC664002FA681 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				378D2097297EC65F002FA681 /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		378D209A297EC66D002FA681 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				378D209B297EC67B002FA681 /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378D2098297EC65F002FA681 /* Auth.storyboard in Resources */,
 				378D206D297EC36C002FA681 /* LaunchScreen.storyboard in Resources */,
 				378D206A297EC36C002FA681 /* Assets.xcassets in Resources */,
-				378D2068297EC36B002FA681 /* Main.storyboard in Resources */,
+				37521950297EEC7B00CDF277 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378D2065297EC36B002FA681 /* ViewController.swift in Sources */,
+				378D209C297EC67B002FA681 /* AuthViewController.swift in Sources */,
 				378D2061297EC36B002FA681 /* AppDelegate.swift in Sources */,
+				3752194D297EEC5400CDF277 /* ViewController.swift in Sources */,
 				378D2063297EC36B002FA681 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,10 +371,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		378D2066297EC36B002FA681 /* Main.storyboard */ = {
+		3752194E297EEC7B00CDF277 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				378D2067297EC36B002FA681 /* Base */,
+				3752194F297EEC7B00CDF277 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -443,8 +517,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,8 +546,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
