@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3752194D297EEC5400CDF277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752194C297EEC5400CDF277 /* ViewController.swift */; };
 		37521950297EEC7B00CDF277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3752194E297EEC7B00CDF277 /* Main.storyboard */; };
+		37521952298014EF00CDF277 /* PasscodeviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37521951298014EF00CDF277 /* PasscodeviewController.swift */; };
 		378D2061297EC36B002FA681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2060297EC36B002FA681 /* AppDelegate.swift */; };
 		378D2063297EC36B002FA681 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2062297EC36B002FA681 /* SceneDelegate.swift */; };
 		378D206A297EC36C002FA681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D2069297EC36C002FA681 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3752194C297EEC5400CDF277 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3752194F297EEC7B00CDF277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37521951298014EF00CDF277 /* PasscodeviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeviewController.swift; sourceTree = "<group>"; };
 		378D205D297EC36B002FA681 /* LouBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378D2060297EC36B002FA681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		378D2062297EC36B002FA681 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +149,6 @@
 		378D2092297EC530002FA681 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3752194C297EEC5400CDF277 /* ViewController.swift */,
 				378D2099297EC664002FA681 /* Auth */,
 				378D206B297EC36C002FA681 /* LaunchScreen.storyboard */,
 			);
@@ -164,6 +165,7 @@
 		378D2094297EC53E002FA681 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3752194C297EEC5400CDF277 /* ViewController.swift */,
 				378D209A297EC66D002FA681 /* Auth */,
 			);
 			path = ViewController;
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				378D209B297EC67B002FA681 /* AuthViewController.swift */,
+				37521951298014EF00CDF277 /* PasscodeviewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37521952298014EF00CDF277 /* PasscodeviewController.swift in Sources */,
 				378D209C297EC67B002FA681 /* AuthViewController.swift in Sources */,
 				378D2061297EC36B002FA681 /* AppDelegate.swift in Sources */,
 				3752194D297EEC5400CDF277 /* ViewController.swift in Sources */,

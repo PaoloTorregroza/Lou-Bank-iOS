@@ -24,6 +24,10 @@ class AuthViewController: UIViewController {
         setupButtons([logInButton, beClientButton])
     }
     
+    @IBAction func logInPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToPasscode", sender: nil)
+    }
+    
     func setupButtons(_ buttons: [UIButton]) {
         for button in buttons {
             button.layer.cornerRadius = 22
