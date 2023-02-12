@@ -16,9 +16,6 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuButton.layer.cornerRadius = menuButton.layer.bounds.width / 2
-        menuButton.clipsToBounds = true
-        menuButton.setTitle("", for: .normal)
         menuButton.transform = menuButton.transform.rotated(by: .pi/2)
         
         setupButtons([logInButton, beClientButton])
