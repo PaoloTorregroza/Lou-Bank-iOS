@@ -13,6 +13,8 @@ class PasscodeViewController: UIViewController {
     @IBOutlet weak var buttonsCollectionView: UICollectionView!
     @IBOutlet weak var progressDotsContainer: UIStackView!
     
+    let viewModel = AuthViewModel()
+    
     let numbers = [
         ("1"," "),
         ("2","ABC"),
@@ -40,12 +42,27 @@ class PasscodeViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func canNotLoginPressed() {
+        let alert = UIAlertController(title: "Try this", message: "Try: 2 5 8 0 0", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
     func setupProgressIndicator() {
-        for _ in 0..<4 {
-            let indicator = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        for el in progressDotsContainer.arrangedSubviews {
+            progressDotsContainer.removeArrangedSubview(el)
+        }
+        
+        for index in 0..<5 {
+            let indicator = UIView(frame: CGRect(x: 10, y: 10, width: 10, height: 10))
             indicator.layer.cornerRadius = 5
-            indicator.backgroundColor = .red
-            NSLayoutConstraint(item: indicator, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 10).isActive = true
+            
+            if index < viewModel.currentPassCode.count {
+                indicator.backgroundColor = UIColor(named: "accentMint")
+            } else {
+                indicator.backgroundColor = UIColor(named: "gray3")
+            }
+            
             progressDotsContainer.addArrangedSubview(indicator)
         }
     }
@@ -59,7 +76,17 @@ class PasscodeViewController: UIViewController {
     }
     
     func numberPressed(_ number: String) {
-        print(number)
+        viewModel.passCodeKeyPressed(number)
+        
+        if viewModel.currentPassCode.count == 5 {
+            if viewModel.validatePassCode() {
+                performSegue(withIdentifier: "goToHome", sender: nil)
+            } else {
+                viewModel.deletePassCode()
+            }
+        }
+        
+        setupProgressIndicator()
     }
 }
 

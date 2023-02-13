@@ -21,6 +21,9 @@
 		378D209C297EC67B002FA681 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D209B297EC67B002FA681 /* AuthViewController.swift */; };
 		E48308FF2999455C00E08448 /* RoundedButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48308FD2999455C00E08448 /* RoundedButtonCollectionViewCell.swift */; };
 		E48309002999455C00E08448 /* RoundedButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48308FE2999455C00E08448 /* RoundedButtonCollectionViewCell.xib */; };
+		E48309032999BEEF00E08448 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48309022999BEEF00E08448 /* AuthViewModel.swift */; };
+		E48309052999C1F100E08448 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48309042999C1F100E08448 /* HomeViewController.swift */; };
+		E48309092999C20A00E08448 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48309082999C20A00E08448 /* Home.storyboard */; };
 		E4B792B529985905002B93D4 /* TopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B792B429985905002B93D4 /* TopButton.swift */; };
 		E4B792B7299859BE002B93D4 /* TopButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B792B6299859BE002B93D4 /* TopButton.xib */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,9 @@
 		378D209B297EC67B002FA681 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E48308FD2999455C00E08448 /* RoundedButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		E48308FE2999455C00E08448 /* RoundedButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundedButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		E48309022999BEEF00E08448 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E48309042999C1F100E08448 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E48309082999C20A00E08448 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E4B792B429985905002B93D4 /* TopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButton.swift; sourceTree = "<group>"; };
 		E4B792B6299859BE002B93D4 /* TopButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +163,7 @@
 		378D2092297EC530002FA681 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E48309072999C20100E08448 /* Home */,
 				E4B792AC299856FA002B93D4 /* ReusableComponents */,
 				378D2099297EC664002FA681 /* Auth */,
 				378D206B297EC36C002FA681 /* LaunchScreen.storyboard */,
@@ -167,6 +174,7 @@
 		378D2093297EC535002FA681 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E48309012999BEE200E08448 /* Auth */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 		378D2094297EC53E002FA681 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E48309062999C1F500E08448 /* Home */,
 				3752194C297EEC5400CDF277 /* ViewController.swift */,
 				378D209A297EC66D002FA681 /* Auth */,
 			);
@@ -218,6 +227,30 @@
 				E48308FE2999455C00E08448 /* RoundedButtonCollectionViewCell.xib */,
 			);
 			path = RoundedButton;
+			sourceTree = "<group>";
+		};
+		E48309012999BEE200E08448 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E48309022999BEEF00E08448 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E48309062999C1F500E08448 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E48309042999C1F100E08448 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E48309072999C20100E08448 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E48309082999C20A00E08448 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E4B792AC299856FA002B93D4 /* ReusableComponents */ = {
@@ -342,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E48309092999C20A00E08448 /* Home.storyboard in Resources */,
 				378D2098297EC65F002FA681 /* Auth.storyboard in Resources */,
 				378D206D297EC36C002FA681 /* LaunchScreen.storyboard in Resources */,
 				E48309002999455C00E08448 /* RoundedButtonCollectionViewCell.xib in Resources */,
@@ -376,6 +410,8 @@
 				378D209C297EC67B002FA681 /* AuthViewController.swift in Sources */,
 				378D2061297EC36B002FA681 /* AppDelegate.swift in Sources */,
 				3752194D297EEC5400CDF277 /* ViewController.swift in Sources */,
+				E48309032999BEEF00E08448 /* AuthViewModel.swift in Sources */,
+				E48309052999C1F100E08448 /* HomeViewController.swift in Sources */,
 				378D2063297EC36B002FA681 /* SceneDelegate.swift in Sources */,
 				E48308FF2999455C00E08448 /* RoundedButtonCollectionViewCell.swift in Sources */,
 				E4B792B529985905002B93D4 /* TopButton.swift in Sources */,
